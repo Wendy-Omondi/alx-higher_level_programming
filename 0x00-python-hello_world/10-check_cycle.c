@@ -16,8 +16,8 @@ f  = f->next->next;
 if (s == f)
 {
 printf("Linked List has a cycle\n");
-return (0);
 }
+return (0);
 }
 printf("Linked List has no cycle \n");
 return (0);
