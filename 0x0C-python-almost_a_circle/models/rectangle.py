@@ -20,6 +20,12 @@ class Rectangle(base):
         self.y = y
         super()__init(id)
 
+    def __str__(self):
+        """Oprints specific syntax"""
+
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
+
     @property
     def height(self):
         """retrieves the height of the rectangle"""
