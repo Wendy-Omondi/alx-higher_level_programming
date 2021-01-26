@@ -2,10 +2,6 @@
 """Defines Base class"""
 
 
-import os
-import json
-
-
 class Base:
 
     """Base class"""
