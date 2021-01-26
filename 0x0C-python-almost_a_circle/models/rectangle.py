@@ -4,8 +4,13 @@
 
 class Rectangle(base):
 
-    """Class named rectangle
-       with height and width
+    """Instantiation of Rectangle
+        Args:
+            width (int): the width of the rectangle
+            height (int): the height of the rectangle
+            x (int): the x coordinate of the rectangle
+            y (int): the y coordinate of the rectangle
+            id (int): the id of the rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """initializes a rectangle"""
