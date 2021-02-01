@@ -6,19 +6,21 @@
  */
 int check_cycle(listint_t *list)
 {
-listint_t *s = list, *f = list;
-s = f = list;
+listint_t *s, *f;
+
+if (list == NULL || list->next == NULL)
+return (0);
+
+s = list->next;
+f = list->next->next;
 
 while (s && f && f->next)
 {
-s = s->next;
-f  = f->next->next;
 if (s == f)
-{
-printf("Linked List has a cycle\n");
+return (1);
+
+s = s->next;
+f = f->next->next;
 }
-return (0);
-}
-printf("Linked List has no cycle \n");
 return (0);
 }
